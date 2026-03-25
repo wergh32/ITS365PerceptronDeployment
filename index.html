@@ -57,6 +57,7 @@ function generateL(){
     for(let c=col;c<col+horiz;c++) grid[(row+vert-1)*4+c]=1;
     return grid;
 }
+
 function generateT(){
     const grid = Array(16).fill(0);
     const row = Math.floor(Math.random()*3);
@@ -69,7 +70,7 @@ function generateT(){
     return grid;
 }
 
-// --- Perceptron ---
+// --- Perceptron training ---
 let X_train = [];
 let y_train = [];
 for(let i=0;i<100;i++){
