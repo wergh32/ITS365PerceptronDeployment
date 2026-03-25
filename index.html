@@ -4,64 +4,11 @@
 <meta charset="UTF-8">
 <title>L vs T Perceptron</title>
 <style>
-    body { 
-        text-align: center; 
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-        background: linear-gradient(120deg, #fdfbfb, #ebedee);
-        color: #333;
-    }
-    h1 { 
-        color: #4a148c; 
-        text-shadow: 1px 1px 2px #aaa; 
-    }
-    table { 
-        margin:auto; 
-        border-collapse: collapse; 
-        margin-top: 20px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    td { 
-        width: 60px; 
-        height: 60px; 
-        border: 2px solid #4a148c; 
-        cursor: pointer; 
-        background:#f3e5f5; 
-        transition: background 0.2s, transform 0.1s;
-        border-radius: 8px;
-    }
-    td.active { 
-        background:#7b1fa2; 
-        box-shadow: inset 0 0 10px #4a148c;
-        transform: scale(1.05);
-    }
-    td:hover { 
-        transform: scale(1.05);
-        background: #d1c4e9;
-    }
-    button { 
-        margin: 10px; 
-        padding:12px 25px; 
-        font-size:16px; 
-        border:none; 
-        border-radius: 8px; 
-        cursor:pointer;
-        color: #fff;
-        background: linear-gradient(45deg, #7b1fa2, #4a148c);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        transition: transform 0.1s, box-shadow 0.2s;
-    }
-    button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-    }
-    #result { 
-        margin-top: 20px; 
-        font-size: 24px; 
-        color: #880e4f; 
-        text-shadow: 1px 1px 2px #ccc;
-    }
+    body { text-align: center; font-family: sans-serif; }
+    table { margin:auto; border-collapse: collapse; }
+    td { width:50px; height:50px; border:1px solid #555; cursor:pointer; background:#eee; }
+    td.active { background:#6c5; }
+    button { margin: 10px; padding:10px 20px; font-size:16px; }
 </style>
 </head>
 <body>
